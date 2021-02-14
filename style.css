@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:hsl(198, 78%, 64%);
+    font-family: 'Ribeye Marrow', cursive;
+    color: red;
+
+}
+.container {
+    display: flex;
+}
+h1{
+    margin-top:-200px;
+    font-size: 2.5rem;
+}
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+}
+.patyk{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #CC9966;
+    width: 20px;
+    height: 260px;
+    z-index: -1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: 0px 0px 6px 0px #CC9966;
+}
+.patyk::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:  #CC6666;
+    box-shadow: 0px 0px 6px 0px #CC6666;
+}
+.target {
+    
+        width: 350px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+.source {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 40px;
+    transition: 0.4s;
+}
+.source:hover{
+   opacity: 0.9;
+}
+#source1 {
+    width: 160px;
+    background: #ef7998;
+
+}
+
+#source2 {
+    width: 200px;
+    background: #17a2b8;
+}
+
+#source3 {
+    width: 240px;
+    background: rgb(255, 193, 7);
+}
+
+#source4 {
+    width: 280px;
+    background: rgb(220, 53, 69);
+}
+
+#source5 {
+    width: 320px;
+    background: rgb(0, 123, 255);
+}
