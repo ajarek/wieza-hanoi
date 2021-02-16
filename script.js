@@ -1,3 +1,4 @@
+//-------------ustawianie ręczne--------------------------------
 function dragstart_handler(ev) {
      
     ev.currentTarget.style.border = `none `;
@@ -19,3 +20,4 @@ function dragstart_handler(ev) {
     // Wyczyść pamięć podręczną danych przeciągania (dla wszystkich formatów / typów)
     ev.dataTransfer.clearData();
    }
+

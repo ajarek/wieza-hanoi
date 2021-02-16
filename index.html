@@ -3,8 +3,12 @@
 <title>wieza hanoi-test😉</title>
 <meta content="width=device-width">
 <link rel="stylesheet" href="style.css">
+
 <body>
-<div><h1>Wieża Hanoi</h1></div>
+    <div class="h1">
+        <h1>Wieża Hanoi</h1><button onclick=" uruchomAnime()">Uruchom animacje</button>
+    </div>
+
     <div class="container">
         <div class="wrap">
             <div class="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);">
@@ -23,9 +27,8 @@
                 <p class="source" id="source5" ondragstart="dragstart_handler(event);" draggable="true"></p>
                 <div class="patyk"></div>
             </div>
-
-
         </div>
+
         <div class="wrap">
             <div class="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>
             <div class="target" ondrop="drop_handler(event);" ondragover="dragover_handler(event);"></div>
@@ -45,7 +48,9 @@
 
         </div>
     </div>
+    <div class="logo">  <a href="mailto:ajarek@poczta.onet.pl"><img src="logo1.PNG" alt="" ></a></div>
     <script src="script.js"></script>
+    <script src="animation.js"></script>
 </body>
 
 </html>
